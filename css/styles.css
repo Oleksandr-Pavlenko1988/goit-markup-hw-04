@@ -2,6 +2,7 @@
 /* колір акценту #2196F3; */
 /* колір заголовків #212121; */
 /* колір головний білий #ffffff; */
+/* колір іконок #AFB1B8; */
 .hiden {
     display: none;
 }
@@ -10,10 +11,11 @@
     --main-color: #757575;
     --accent-color: #2196F3;
     --header-color: #212121;
+    --icon-color: #AFB1B8;
     --primary-white-color: #ffffff;
 }
 
-.list-style {
+ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -262,32 +264,33 @@ body {
     text-align: center;
 }
 
-.social-list {
-    padding-left: 0;
+.team-icons-list {
     display: flex;
-    gap: 10px;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
-.social-item {
+.team-link {
+    display: inline-block;
     width: 44px;
     height: 44px;
     padding: 12px;
-}
-
-.social-link:hover,
-.social-link:focus .socil-icon {
-    display: block;
-    width: 44px;
-    height: 44px;
-    padding: 12px;
-    color: #FFFFFF;
-    background-color: var(--accent-color);
+    color: var(--icon-color);
     border-radius: 50%;
 }
 
-.socil-icon {
-    fill: #AFB1B8;
+.team-link:not(last-child) {
+    margin-right: 10px;
+}
+
+.team-link:hover,
+.team-link:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+.team-icon {
+    fill: currentColor;
 }
 
 /* clients */
@@ -304,8 +307,8 @@ body {
     padding: 16px 32px;
     width: 170px;
     height: 92px;
-    color: #AFB1B8;
-    border: 1px solid #AFB1B8;
+    color: var(--icon-color);
+    border: 1px solid var(--icon-color);
     border-radius: 4px;
 }
 
@@ -403,7 +406,7 @@ body {
 
 }
 
-.svg-icon {
+.footer-icon {
     fill: currentColor;
 }
 
