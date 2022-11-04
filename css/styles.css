@@ -272,7 +272,7 @@ body {
 }
 
 .team-link {
-    display: inline-block;
+    display: block;
     width: 44px;
     height: 44px;
     padding: 12px;
@@ -304,7 +304,7 @@ body {
 }
 
 .client-link {
-    display: inline-block;
+    display: block;
     padding: 16px 32px;
     width: 170px;
     height: 92px;
@@ -332,7 +332,7 @@ body {
 }
 
 .footer-logo {
-    display: inline-block;
+    display: block;
     margin-bottom: 20px;
     color: var(--primary-white-color);
     text-decoration: none;
@@ -343,7 +343,7 @@ body {
 }
 
 .address {
-    display: inline-block;
+    display: block;
     color: var(--primary-white-color);
     text-decoration: none;
     font-style: normal;
@@ -355,7 +355,7 @@ body {
 }
 
 .contact-footer {
-    display: inline-block;
+    display: block;
     margin-top: 9px;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
@@ -385,7 +385,7 @@ body {
 }
 
 .footer-link {
-    display: inline-block;
+    display: block;
     width: 44px;
     height: 44px;
     padding: 12px;
@@ -394,7 +394,7 @@ body {
     border-radius: 50%;
 }
 
-.footer-link:not(last-child) {
+.footer-item:not(:last-child) {
     margin-right: 10px;
 }
 
