@@ -50,9 +50,6 @@ body {
 
 /* header */
 .header {
-    width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
     padding-top: 24px;
     padding-bottom: 25px;
     border-bottom: 1px solid #ECECEC;
@@ -135,14 +132,13 @@ body {
 
 /* main */
 .hero {
-    width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
     padding: 200px 0;
     background-image: linear-gradient(rgba(47, 58, 50, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/hero.jpg);
     background-color: #C4C4C4;
-    ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .hero-title {
@@ -183,10 +179,6 @@ body {
 
 /* features */
 .features {
-    width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #F5F5F5;
     padding-bottom: 0;
 }
 
@@ -325,9 +317,6 @@ body {
 
 /* footer */
 .footer {
-    width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2F303A;
@@ -417,11 +406,6 @@ body {
 }
 
 /* portfolio */
-.portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 .button-list {
     display: flex;
     justify-content: center;
